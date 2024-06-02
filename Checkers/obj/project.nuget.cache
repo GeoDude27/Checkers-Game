@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RUjtsGBEfjjZ9GshDCTF0iqm7SXXyEQc3EoTtdTnqHet5nTndzTToh4u5oeYDyXExC+CzRKlR6JpngPajuPnfg==",
+  "success": true,
+  "projectFilePath": "D:\\Facultate\\sem_2\\MVP\\Checkers\\Checkers\\Checkers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vilcu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

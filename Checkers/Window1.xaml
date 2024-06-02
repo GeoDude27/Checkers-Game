@@ -1,0 +1,57 @@
+﻿<Window x:Class="CheckersGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Checkers Game" Height="600" Width="800">
+
+    <Window.Resources>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Maroon"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderThickness="0"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#005F8A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#004666"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+
+        <Image Source="D:\Facultate\sem_2\MVP\Checkers\Checkers\checkers_menu.png" Stretch="Fill"/>
+
+
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+
+            <Button Content="Play" Click="PlayButton_Click"  Margin="88,11,110,81" Grid.Row="1" />
+
+            <Button Content="About" Grid.Row="1" Click="AboutButton_Click" Margin="88,131,110,122" Grid.RowSpan="2"  />
+
+
+            <Button Content="Statistics" Grid.Row="2" Click="StatButton_Click" Margin="88,81,110,10" />
+        </Grid>
+    </Grid>
+</Window>

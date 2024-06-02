@@ -1,0 +1,46 @@
+﻿<Window x:Class="Checkers.Views.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Checkers.Views"
+        mc:Ignorable="d"
+        Title="About" Height="468" Width="800">
+
+    
+    <Grid>
+
+        <Image Source="D:\Facultate\sem_2\MVP\Checkers\Checkers\checkers page.png" Stretch="Fill" Opacity="0.95" />
+
+        
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <DockPanel LastChildFill="True" Height="614">
+                <TextBlock Text="Checkers"
+                           FontSize="27" FontWeight="Bold"
+                           DockPanel.Dock="Top"
+                           Margin="0,10,0,20"
+                           HorizontalAlignment="Center"/>
+                <StackPanel Margin="10" DockPanel.Dock="Left">
+                    <TextBlock Text="Vilcu Rares George"
+                               FontSize="12" FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+                    <TextBlock Text="Email institutional: rares.vilcu@student.unitbv.ro"
+                               FontSize="12" FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+                    <TextBlock Text="Grupa: 10LF323"
+                               FontSize="12" FontWeight="Bold"
+                               Margin="0,0,0,20"/>
+                    <TextBlock FontSize="18" TextWrapping="Wrap" Margin="0,0,0,10" Height="313">
+                        Checkers, un joc strategic captivant, își are originile încă din vechiul Egipt, 
+                        dar a devenit popular în întreaga lume în secolele trecute. Cunoscut și sub numele de "dame" 
+                        în unele regiuni, acest joc simplu, dar profund, este jucat pe o tablă de 64 de pătrate, 
+                        alternând între culorile roșu și negru sau alb și negru. Scopul este să muți piesele tale diagonale, 
+                        capturând piesele adverse prin "sărituri" peste ele. Strategia și anticiparea sunt esențiale pentru a câștiga,
+                        iar jucătorii abili își dezvoltă abilitățile pentru a-și domina adversarii. Deși regulile au evoluat de-a lungul 
+                        timpului, esența jocului rămâne aceeași, atrăgându-i pe oameni în competiții pasionate și în meciuri relaxante deopotrivă.
+                    </TextBlock>
+                </StackPanel>
+            </DockPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
